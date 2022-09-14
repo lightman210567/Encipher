@@ -8,6 +8,9 @@ namespace Encipher
 {
     public class Encipher
     {
+        public static string EncipherText()
+        {
 
+        }
     }
 }
