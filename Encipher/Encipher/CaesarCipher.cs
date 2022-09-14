@@ -12,9 +12,10 @@ namespace Encipher
         {
             char[] TextArray = PlainText.ToCharArray();
 
+            int ForEachIteration = 0;
             foreach (char letter in TextArray)
             {
-
+                ForEachIteration++;
             }
         }
     }
