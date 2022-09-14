@@ -8,9 +8,16 @@ namespace Encipher
 {
     internal class ModularArtithmetic
     {
-        internal static int Modulo(int Modulus)
+        internal static int Modulo(int Modulus, int NumberToModulo)
         {
+            int CurrentNumber = NumberToModulo;
 
+            while (CurrentNumber > Modulus)
+            {
+                CurrentNumber = CurrentNumber - Modulus;
+            }
+
+            return CurrentNumber;
         }
     }
 }
