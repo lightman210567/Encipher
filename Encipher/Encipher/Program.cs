@@ -10,7 +10,7 @@ namespace Encipher
     {
         public static string EncipherText()
         {
-
+            return "PLACEHOLDER";
         }
     }
 }
