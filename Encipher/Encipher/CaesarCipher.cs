@@ -8,7 +8,7 @@ namespace Encipher
 {
     internal class CaesarCipher
     {
-        internal static string CaesarCipherFunction(int key)
+        internal static string CaesarCipherFunction(string PlainText, int Key)
         {
 
         }
