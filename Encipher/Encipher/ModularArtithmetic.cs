@@ -8,7 +8,7 @@ namespace Encipher
 {
     internal class ModularArtithmetic
     {
-        internal static int Modulo()
+        internal static int Modulo(int Modulus)
         {
 
         }
