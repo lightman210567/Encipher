@@ -10,7 +10,12 @@ namespace Encipher
     {
         internal static string CaesarCipherFunction(string PlainText, int Key)
         {
+            char[] TextArray = PlainText.ToCharArray();
 
+            foreach (char letter in TextArray)
+            {
+
+            }
         }
     }
 }
