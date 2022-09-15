@@ -18,6 +18,8 @@ namespace Encipher
             {
                 int NumberEquivalent = LetterConverter.LetterConvert(letter);
 
+                int ShiftedLetter = NumberEquivalent + Key;
+
                 ForEachIteration++;
             }
         }
