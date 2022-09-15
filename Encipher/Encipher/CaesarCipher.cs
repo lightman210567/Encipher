@@ -30,7 +30,7 @@ namespace Encipher
                 ForEachIteration++;
             }
 
-            string ShiftedText = ShiftedTextArray.ToString();
+            string ShiftedText = new string(ShiftedTextArray);
             return ShiftedText;
         }
     }
