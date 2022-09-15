@@ -29,6 +29,9 @@ namespace Encipher
 
                 ForEachIteration++;
             }
+
+            string ShiftedText = ShiftedTextArray.ToString();
+            return ShiftedText;
         }
     }
 }
