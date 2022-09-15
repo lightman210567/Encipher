@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using lightman210567.LetterToNumber;
 
 namespace Encipher
 {
@@ -15,6 +16,8 @@ namespace Encipher
             int ForEachIteration = 0;
             foreach (char letter in TextArray)
             {
+                int NumberEquivalent = LetterConverter.LetterConvert(letter);
+
                 ForEachIteration++;
             }
         }
