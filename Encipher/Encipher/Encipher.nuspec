@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>lightman210567.Encipher</id>
+    <version>1.0.0-Beta</version>
+    <authors>lightman210567</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <description>A package that will contain the implementations of multiple ciphers. Currently only the caesar cipher is supported.</description>
+    <releaseNotes>Added the caesar cipher</releaseNotes>
+    <repository type="git" url="https://github.com/lightman210567/Encipher.git"></repository>
+    <dependencies>
+      <dependency id="lightman210567.LetterToNumber" version="1.1.0"></dependency>
+    </dependencies>
+  </metadata>
+</package>
