@@ -20,6 +20,8 @@ namespace Encipher
 
                 int ShiftedLetter = NumberEquivalent + Key;
 
+                int ModuloLetter = ModularArtithmetic.Modulo(26, ShiftedLetter);
+
                 ForEachIteration++;
             }
         }
