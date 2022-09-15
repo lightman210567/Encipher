@@ -12,15 +12,20 @@ namespace Encipher
         internal static string CaesarCipherFunction(string PlainText, int Key)
         {
             char[] TextArray = PlainText.ToCharArray();
+            char[] ShiftedTextArray = new char[TextArray.Length];
 
             int ForEachIteration = 0;
             foreach (char letter in TextArray)
             {
                 int NumberEquivalent = LetterConverter.LetterConvert(letter);
 
-                int ShiftedLetter = NumberEquivalent + Key;
+                int ShiftedNumber = NumberEquivalent + Key;
 
-                int ModuloLetter = ModularArtithmetic.Modulo(26, ShiftedLetter);
+                int ModuloNumber = ModularArtithmetic.Modulo(26, ShiftedNumber);
+
+                char NewLetter = LetterConverter.NumberConvert(ModuloNumber);
+
+                ShiftedTextArray[ForEachIteration] = NewLetter;
 
                 ForEachIteration++;
             }
