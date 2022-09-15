@@ -24,7 +24,7 @@ namespace Encipher
                     throw new Exception("Cipher input not recognised. Please only enter supported cipher names from the documentation.");
             }
 
-            return ResultingText
+            return ResultingText;
         }
     }
 }
