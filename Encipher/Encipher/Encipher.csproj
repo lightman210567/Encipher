@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="lightman210567.LetterToNumber" Version="1.1.0" />
+    <PackageReference Include="lightman210567.LetterToNumber" Version="1.2.0" />
   </ItemGroup>
 
 </Project>
