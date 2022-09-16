@@ -23,14 +23,16 @@ namespace Encipher
                 {
                     ShiftedTextArray[ForEachIteration] = ' ';
                 }
+                else
+                {
+                    int ShiftedNumber = NumberEquivalent + Key;
 
-                int ShiftedNumber = NumberEquivalent + Key;
+                    int ModuloNumber = ModularArtithmetic.Modulo(26, ShiftedNumber);
 
-                int ModuloNumber = ModularArtithmetic.Modulo(26, ShiftedNumber);
+                    char NewLetter = LetterConverter.NumberConvert(ModuloNumber);
 
-                char NewLetter = LetterConverter.NumberConvert(ModuloNumber);
-
-                ShiftedTextArray[ForEachIteration] = NewLetter;
+                    ShiftedTextArray[ForEachIteration] = NewLetter;
+                }
 
                 ForEachIteration++;
             }
