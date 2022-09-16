@@ -2,12 +2,12 @@
 <package >
   <metadata>
     <id>lightman210567.Encipher</id>
-    <version>1.0.0-Beta.4</version>
+    <version>1.0.0</version>
     <authors>lightman210567</authors>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <description>A package that will contain the implementations of multiple ciphers. Currently only the caesar cipher is supported.</description>
-    <releaseNotes>Fixed GitHub issue #10 (https://github.com/lightman210567/Encipher/issues/10)</releaseNotes>
+    <releaseNotes>Promoted v1.0.0-Beta.4 to stable</releaseNotes>
     <repository type="git" url="https://github.com/lightman210567/Encipher.git"></repository>
     <dependencies>
       <dependency id="lightman210567.LetterToNumber" version="1.2.0"></dependency>
