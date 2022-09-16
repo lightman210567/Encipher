@@ -10,7 +10,7 @@
     <releaseNotes>Added the caesar cipher</releaseNotes>
     <repository type="git" url="https://github.com/lightman210567/Encipher.git"></repository>
     <dependencies>
-      <dependency id="lightman210567.LetterToNumber" version="1.1.0"></dependency>
+      <dependency id="lightman210567.LetterToNumber" version="1.2.0"></dependency>
     </dependencies>
   </metadata>
 </package>
