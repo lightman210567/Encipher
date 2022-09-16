@@ -19,6 +19,11 @@ namespace Encipher
             {
                 int NumberEquivalent = LetterConverter.LetterConvert(letter);
 
+                if (NumberEquivalent == 0)
+                {
+                    ShiftedTextArray[ForEachIteration] = ' ';
+                }
+
                 int ShiftedNumber = NumberEquivalent + Key;
 
                 int ModuloNumber = ModularArtithmetic.Modulo(26, ShiftedNumber);
