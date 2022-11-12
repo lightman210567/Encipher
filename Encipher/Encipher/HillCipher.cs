@@ -62,7 +62,8 @@ namespace Encipher
 
         internal static string HillCipherDecrypt(string CipherText, int K1, int K2, int K3, int K4)
         {
-
+            char[] CipherTextArray = CipherText.ToCharArray();
+            char[] PlainTextArray = new char[CipherTextArray.Length];
         }
     }
 }
