@@ -13,7 +13,12 @@ namespace Encipher
         {
             char[] TextArray = PlainText.ToCharArray();
 
-            
+            // Checks if the TextArray's length is divisible by 2 or not.
+            if (TextArray.Length % 2 != 0)
+            {
+                // If not divisible by 2, an extra padding letter is added to the end of the caracter array
+                TextArray[TextArray.Length + 1] = 'x';
+            }
         }
     }
 }
