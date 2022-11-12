@@ -64,6 +64,23 @@ namespace Encipher
         {
             char[] CipherTextArray = CipherText.ToCharArray();
             char[] PlainTextArray = new char[CipherTextArray.Length];
+
+            int RemainingBlocks = CipherTextArray.Length / 2;
+            int LetterIteration = 0;
+
+            while (RemainingBlocks > 0)
+            {
+                int C1 = LetterConverter.LetterConvert(CipherTextArray[LetterIteration]);
+                LetterIteration++;
+                int C2 = LetterConverter.LetterConvert(CipherTextArray[LetterIteration]);
+                LetterIteration++;
+
+                int P1 = ((K1 * K4) - (K2 * K3)) * ((K4 * C1) - (K2 * C2)); // The equation to decrypt C1
+                int P2 = ((K1 * K4) - (K2 * K3)) * ((-K3 * C1) - (K1 * C2));
+
+                int P1Mod = ModularArtithmetic.Modulo(26, P1);
+                int P2Mod = ModularArtithmetic.Modulo(26, P2);
+            }
         }
     }
 }
