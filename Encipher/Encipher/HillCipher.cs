@@ -80,7 +80,16 @@ namespace Encipher
 
                 int P1Mod = ModularArtithmetic.Modulo(26, P1);
                 int P2Mod = ModularArtithmetic.Modulo(26, P2);
+
+                char P1Letter = LetterConverter.NumberConvert(P1Mod);
+                char P2Letter = LetterConverter.NumberConvert(P2Mod);
+
+                PlainTextArray[LetterIteration - 1] = P1Letter;
+                PlainTextArray[LetterIteration] = P2Letter;
             }
+
+            string PlainText = PlainTextArray.ToString();
+            return PlainText;
         }
     }
 }
