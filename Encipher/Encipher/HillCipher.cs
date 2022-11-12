@@ -9,7 +9,7 @@ namespace Encipher
 {
     internal class HillCipher
     {
-        internal static string HillCipherFunction()
+        internal static string HillCipherEncrypt()
         {
 
         }
