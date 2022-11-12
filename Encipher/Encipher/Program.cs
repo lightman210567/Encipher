@@ -10,7 +10,7 @@ namespace Encipher
     {
         public static string EncipherText(string PlainText, string CipherToUse)
         {
-            string ResultingText;
+            string ResultingText = "";
 
             switch (CipherToUse)
             {
@@ -20,7 +20,7 @@ namespace Encipher
                     int Key = int.Parse(KeyInput);
                     ResultingText = CaesarCipher.CaesarCipherFunction(PlainText, Key);
                     break;
-                case: "hill cipher":
+                case "hill cipher":
                     Console.WriteLine("Please your keys (with no spaces, speparated by a '-'");
                     string Keys = Console.ReadLine();
                     string[] SplitKeys = Keys.Split('-');
