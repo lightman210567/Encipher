@@ -23,9 +23,15 @@ namespace Encipher
             char[] EncipheredTextArray = new char[TextArray.Length];
 
             int RemainingBlocks = (int)TextArray.Length / 2;
+            int LetterIteration = 0;
 
             while (RemainingBlocks > 0)
             {
+                int Letter1 = LetterConverter.LetterConvert(TextArray[LetterIteration]);
+                LetterIteration++;
+                int Letter2 = LetterConverter.LetterConvert(TextArray[LetterIteration);
+                LetterIteration++;
+
                 RemainingBlocks = RemainingBlocks - 1;
             };
         }
