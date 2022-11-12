@@ -42,7 +42,7 @@ namespace Encipher
                 LetterIteration++;
 
                 int C1 = (K1 * P1) + (K2 * P2);
-                int C2 = (K3 * P1) + (k4 * P2);
+                int C2 = (K3 * P1) + (K4 * P2);
 
                 int C1Mod = ModularArtithmetic.Modulo(26, C1);
                 int C2Mod = ModularArtithmetic.Modulo(26, C2);
@@ -58,6 +58,11 @@ namespace Encipher
 
             string EncipheredText = EncipheredTextArray.ToString();
             return EncipheredText;
+        }
+
+        internal static string HillCipherDecrypt(string CipherText, int K1, int K2, int K3, int K4)
+        {
+
         }
     }
 }
