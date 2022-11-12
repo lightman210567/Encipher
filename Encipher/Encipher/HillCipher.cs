@@ -27,10 +27,22 @@ namespace Encipher
 
             while (RemainingBlocks > 0)
             {
-                int Letter1 = LetterConverter.LetterConvert(TextArray[LetterIteration]);
+                int P1 = LetterConverter.LetterConvert(TextArray[LetterIteration]);
                 LetterIteration++;
-                int Letter2 = LetterConverter.LetterConvert(TextArray[LetterIteration);
+                int P2 = LetterConverter.LetterConvert(TextArray[LetterIteration]);
                 LetterIteration++;
+
+                int C1 = (K1 * P1) + (K2 * P2);
+                int C2 = (K3 * P1) + (k4 * P2);
+
+                int C1Mod = ModularArtithmetic.Modulo(26, C1);
+                int C2Mod = ModularArtithmetic.Modulo(26, C2);
+
+                char C1Letter = LetterConverter.NumberConvert(C1Mod);
+                char C2Letter = LetterConverter.NumberConvert(C2Mod);
+
+                EncipheredTextArray[LetterIteration - 1] = C1Letter;
+                EncipheredTextArray[LetterIteration] = C2Letter;
 
                 RemainingBlocks = RemainingBlocks - 1;
             };
