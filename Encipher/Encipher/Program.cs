@@ -40,6 +40,7 @@ namespace Encipher
                     {
                         ResultingText = HillCipher.HillCipherDecrypt(Text, Key1, Key2, Key3, Key4);
                     }
+                    break;
                 default:
                     throw new Exception("Cipher input not recognised. Please only enter supported cipher names from the documentation.");
             }
