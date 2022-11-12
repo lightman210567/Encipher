@@ -9,8 +9,17 @@ namespace Encipher
 {
     internal class HillCipher
     {
-        internal static string HillCipherEncrypt(string PlainText, int K1, int K2, int K3, int k4)
+        internal static string HillCipherEncrypt(string PlainText, int K1, int K2, int K3, int K4)
         {
+            if ((K1 * K4) - (K2 * K3) == -27)
+            {
+                
+            } 
+            else
+            {
+                throw new Exception("THe provided keys to not have a determinant of -27, please only supply valid keys");
+            }
+
             char[] TextArray = PlainText.ToCharArray();
 
             // Checks if the TextArray's length is divisible by 2 or not.
