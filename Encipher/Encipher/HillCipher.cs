@@ -20,6 +20,8 @@ namespace Encipher
                 TextArray[TextArray.Length + 1] = 'x';
             }
 
+            char[] EncipheredTextArray = new char[TextArray.Length];
+
             int RemainingBlocks = (int)TextArray.Length / 2;
 
             while (RemainingBlocks > 0)
