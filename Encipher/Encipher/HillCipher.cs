@@ -19,6 +19,13 @@ namespace Encipher
                 // If not divisible by 2, an extra padding letter is added to the end of the caracter array
                 TextArray[TextArray.Length + 1] = 'x';
             }
+
+            int RemainingBlocks = (int)TextArray.Length / 2;
+
+            while (RemainingBlocks > 0)
+            {
+                RemainingBlocks = RemainingBlocks - 1;
+            };
         }
     }
 }
