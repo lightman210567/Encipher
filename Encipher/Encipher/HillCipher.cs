@@ -46,6 +46,9 @@ namespace Encipher
 
                 RemainingBlocks = RemainingBlocks - 1;
             };
+
+            string EncipheredText = EncipheredTextArray.ToString();
+            return EncipheredText;
         }
     }
 }
