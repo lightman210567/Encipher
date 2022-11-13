@@ -25,8 +25,10 @@ namespace Encipher
             // Checks if the TextArray's length is divisible by 2 or not.
             if (TextArray.Length % 2 != 0)
             {
+                int OrigionalLength = TextArray.Length;
                 // If not divisible by 2, an extra padding letter is added to the end of the caracter array
-                TextArray[TextArray.Length + 1] = 'x';
+                Array.Resize(ref TextArray, +1);
+                TextArray[OrigionalLength + 1] = 'x';
             }
 
             char[] EncipheredTextArray = new char[TextArray.Length];
@@ -50,8 +52,8 @@ namespace Encipher
                 char C1Letter = LetterConverter.NumberConvert(C1Mod);
                 char C2Letter = LetterConverter.NumberConvert(C2Mod);
 
-                EncipheredTextArray[LetterIteration - 1] = C1Letter;
-                EncipheredTextArray[LetterIteration] = C2Letter;
+                EncipheredTextArray[LetterIteration - 2] = C1Letter;
+                EncipheredTextArray[LetterIteration - 1] = C2Letter;
 
                 RemainingBlocks = RemainingBlocks - 1;
             };
@@ -76,7 +78,7 @@ namespace Encipher
                 LetterIteration++;
 
                 int P1 = ((K1 * K4) - (K2 * K3)) * ((K4 * C1) - (K2 * C2)); // The equation to decrypt C1
-                int P2 = ((K1 * K4) - (K2 * K3)) * ((-K3 * C1) - (K1 * C2));
+                int P2 = ((K1 * K4) - (K2 * K3)) * ((-K3 * C1) + (K1 * C2));
 
                 int P1Mod = ModularArtithmetic.Modulo(26, P1);
                 int P2Mod = ModularArtithmetic.Modulo(26, P2);
