@@ -52,8 +52,8 @@ namespace Encipher
                 char C1Letter = LetterConverter.NumberConvert(C1Mod);
                 char C2Letter = LetterConverter.NumberConvert(C2Mod);
 
-                EncipheredTextArray[LetterIteration - 1] = C1Letter;
-                EncipheredTextArray[LetterIteration] = C2Letter;
+                EncipheredTextArray[LetterIteration - 2] = C1Letter;
+                EncipheredTextArray[LetterIteration - 1] = C2Letter;
 
                 RemainingBlocks = RemainingBlocks - 1;
             };
