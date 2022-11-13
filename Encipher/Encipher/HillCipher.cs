@@ -58,7 +58,7 @@ namespace Encipher
                 RemainingBlocks = RemainingBlocks - 1;
             };
 
-            string EncipheredText = EncipheredTextArray.ToString();
+            string EncipheredText = new string(EncipheredTextArray);
             return EncipheredText;
         }
 
@@ -90,7 +90,7 @@ namespace Encipher
                 PlainTextArray[LetterIteration] = P2Letter;
             }
 
-            string PlainText = PlainTextArray.ToString();
+            string PlainText = new string(PlainTextArray);
             return PlainText;
         }
     }
