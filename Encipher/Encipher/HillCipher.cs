@@ -26,7 +26,7 @@ namespace Encipher
             if (TextArray.Length % 2 != 0)
             {
                 // If not divisible by 2, an extra padding letter is added to the end of the caracter array
-                TextArray[TextArray.Length + 1] = 'x';
+                Array.Resize(ref TextArray, +1);
             }
 
             char[] EncipheredTextArray = new char[TextArray.Length];
