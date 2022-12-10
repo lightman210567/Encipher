@@ -21,14 +21,15 @@ namespace Encipher
             }
 
             char[] TextArray = PlainText.ToCharArray();
+            int OrigionalTextArrayLength = TextArray.Length;
+            int NewTextArrayLength = OrigionalTextArrayLength + 1;
 
             // Checks if the TextArray's length is divisible by 2 or not.
             if (TextArray.Length % 2 != 0)
             {
-                int OrigionalLength = TextArray.Length;
                 // If not divisible by 2, an extra padding letter is added to the end of the caracter array
-                Array.Resize(ref TextArray, +1);
-                TextArray[OrigionalLength + 1] = 'x';
+                Array.Resize(ref TextArray, NewTextArrayLength);
+                TextArray[NewTextArrayLength - 1] = 'x';
             }
 
             char[] EncipheredTextArray = new char[TextArray.Length];
