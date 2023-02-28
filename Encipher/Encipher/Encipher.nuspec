@@ -7,7 +7,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <description>A package that contains the implementations of multiple ciphers.</description>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>completely removed the hill cipher</releaseNotes>
     <repository type="git" url="https://github.com/lightman210567/Encipher.git"></repository>
     <dependencies>
       <dependency id="lightman210567.LetterToNumber" version="1.2.0"></dependency>
