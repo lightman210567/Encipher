@@ -2,12 +2,12 @@
 <package >
   <metadata>
     <id>lightman210567.Encipher</id>
-    <version>1.1.0-Beta.3</version>
+    <version>1.1.0</version>
     <authors>lightman210567</authors>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <description>A package that contains the implementations of multiple ciphers. The hill cipher is supported in the latest beta.</description>
-    <releaseNotes>Fixed hill cipher encryption (GitHub issues #16 and #23)</releaseNotes>
+    <description>A package that contains the implementations of multiple ciphers.</description>
+    <releaseNotes>completely removed the hill cipher</releaseNotes>
     <repository type="git" url="https://github.com/lightman210567/Encipher.git"></repository>
     <dependencies>
       <dependency id="lightman210567.LetterToNumber" version="1.2.0"></dependency>
