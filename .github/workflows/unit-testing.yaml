@@ -21,8 +21,8 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore $Env:GITHUB_WORKSPACE\Encipher\Encipher.sln
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore $Env:GITHUB_WORKSPACE\Encipher\Encipher.sln
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal $Env:GITHUB_WORKSPACE\Encipher\Encipher.sln
