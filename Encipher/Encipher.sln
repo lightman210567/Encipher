@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encipher", "Encipher\Encipher.csproj", "{A3B6A82D-7129-49DC-BB06-896D9463114D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encipher", "Encipher\Encipher.csproj", "{A3B6A82D-7129-49DC-BB06-896D9463114D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{02EFCBF9-2B83-4886-853C-48AFB9674CEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A3B6A82D-7129-49DC-BB06-896D9463114D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3B6A82D-7129-49DC-BB06-896D9463114D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3B6A82D-7129-49DC-BB06-896D9463114D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02EFCBF9-2B83-4886-853C-48AFB9674CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02EFCBF9-2B83-4886-853C-48AFB9674CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02EFCBF9-2B83-4886-853C-48AFB9674CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02EFCBF9-2B83-4886-853C-48AFB9674CEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
