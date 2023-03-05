@@ -9,7 +9,22 @@ namespace Encipher
     internal class AtbashCipher
     {
         internal static string Atbash(string PlainText) {
+            char[] PlainTextLetters = PlainText.ToCharArray();
 
+            char[] CipherTextLetters = new char[PlainTextLetters.Length];
+
+            int i = 0;
+            foreach (char Letter in PlainTextLetters)
+            {
+                i++;
+
+                char NewLetter = ReverseLetter(Letter);
+
+                CipherTextLetters[i] = NewLetter;
+            }
+
+            string CipherText = CipherTextLetters.ToString();
+            return CipherText;
         }
 
         internal static char ReverseLetter(char Letter)
@@ -70,6 +85,8 @@ namespace Encipher
                     return 'b';
                 case 'z':
                     return 'a';
+                case ' ':
+                    return ' ';
                 default:
                     return ' ';
             }
