@@ -16,11 +16,10 @@ namespace Encipher
             int i = 0;
             foreach (char Letter in PlainTextLetters)
             {
-                i++;
-
                 char NewLetter = ReverseLetter(Letter);
 
                 CipherTextLetters[i] = NewLetter;
+                i++;
             }
 
             string CipherText = CipherTextLetters.ToString();
