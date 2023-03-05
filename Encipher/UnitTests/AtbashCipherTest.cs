@@ -12,7 +12,7 @@ namespace UnitTests
 
             string CipherText = Encipher.Encipher.EncipherText(PlainText, "atbash cipher");
 
-            Assert.AreEqual(CipherText, "svool dliow");
+            Assert.AreEqual("svool dliow", CipherText);
         }
 
         [TestMethod]
@@ -22,7 +22,7 @@ namespace UnitTests
 
             string PlainText = Encipher.Encipher.EncipherText(CipherText, "atbash cipher");
 
-            Assert.AreEqual(PlainText, "hello world");
+            Assert.AreEqual("hello world", PlainText);
         }
 
         [TestMethod]
@@ -32,7 +32,7 @@ namespace UnitTests
 
             string CipherText = Encipher.Encipher.EncipherText(PlainText, "atbash cipher");
 
-            Assert.AreEqual(CipherText, "zyxwvutsrqponmlkjihgfedcba");
+            Assert.AreEqual("zyxwvutsrqponmlkjihgfedcba", CipherText);
         }
 
         [TestMethod]
@@ -42,7 +42,7 @@ namespace UnitTests
 
             string PlainText = Encipher.Encipher.EncipherText(CipherText, "atbash cipher");
 
-            Assert.AreEqual(PlainText, "abcdefghijklmnopqrstuvwxyz");
+            Assert.AreEqual("abcdefghijklmnopqrstuvwxyz", PlainText);
         }
     }
 }

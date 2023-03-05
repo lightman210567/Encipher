@@ -22,7 +22,7 @@ namespace Encipher
                 i++;
             }
 
-            string CipherText = CipherTextLetters.ToString();
+            string CipherText = new string(CipherTextLetters);
             return CipherText;
         }
 
