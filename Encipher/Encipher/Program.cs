@@ -20,6 +20,8 @@ namespace Encipher
                     int Key = int.Parse(KeyInput);
                     ResultingText = CaesarCipher.CaesarCipherFunction(PlainText, Key);
                     break;
+                case "atbash cipher":
+                    break;
                 default:
                     throw new Exception("Cipher input not recognised. Please only enter supported cipher names from the documentation.");
             }
