@@ -2,12 +2,12 @@
 <package >
   <metadata>
     <id>lightman210567.Encipher</id>
-    <version>1.1.0</version>
+    <version>1.2.0-Beta.1</version>
     <authors>lightman210567</authors>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <description>A package that contains the implementations of multiple ciphers.</description>
-    <releaseNotes>completely removed the hill cipher</releaseNotes>
+    <releaseNotes>Added the atbash cipher</releaseNotes>
     <repository type="git" url="https://github.com/lightman210567/Encipher.git"></repository>
     <dependencies>
       <dependency id="lightman210567.LetterToNumber" version="1.2.0"></dependency>
