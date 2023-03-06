@@ -2,12 +2,12 @@
 <package >
   <metadata>
     <id>lightman210567.Encipher</id>
-    <version>1.2.0</version>
+    <version>2.0.0</version>
     <authors>lightman210567</authors>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <description>A package that contains the implementations of multiple ciphers.</description>
-    <releaseNotes>Added the atbash cipher</releaseNotes>
+    <releaseNotes>Reworked the program to allow a more user friendly experience. Backwards copmpatibility is broken by this version - any previous implementation of this package will have to be modified.</releaseNotes>
     <repository type="git" url="https://github.com/lightman210567/Encipher.git"></repository>
     <dependencies>
       <dependency id="lightman210567.LetterToNumber" version="1.2.0"></dependency>
