@@ -1,4 +1,4 @@
-using Encipher;
+using lightman210567.Encipher;
 
 namespace UnitTests
 {
@@ -10,7 +10,7 @@ namespace UnitTests
         {
             string PlainText = "hello world";
 
-            string CipherText = Encipher.Encipher.EncipherText(PlainText, "atbash cipher");
+            string CipherText = lightman210567.Encipher.Encipher.AtbashCipher(PlainText);
 
             Assert.AreEqual("svool dliow", CipherText);
         }
@@ -20,7 +20,7 @@ namespace UnitTests
         {
             string CipherText = "svool dliow";
 
-            string PlainText = Encipher.Encipher.EncipherText(CipherText, "atbash cipher");
+            string PlainText = lightman210567.Encipher.Encipher.AtbashCipher(CipherText);
 
             Assert.AreEqual("hello world", PlainText);
         }
@@ -30,7 +30,7 @@ namespace UnitTests
         {
             string PlainText = "abcdefghijklmnopqrstuvwxyz";
 
-            string CipherText = Encipher.Encipher.EncipherText(PlainText, "atbash cipher");
+            string CipherText = lightman210567.Encipher.Encipher.AtbashCipher(PlainText);
 
             Assert.AreEqual("zyxwvutsrqponmlkjihgfedcba", CipherText);
         }
@@ -40,7 +40,7 @@ namespace UnitTests
         {
             string CipherText = "zyxwvutsrqponmlkjihgfedcba";
 
-            string PlainText = Encipher.Encipher.EncipherText(CipherText, "atbash cipher");
+            string PlainText = lightman210567.Encipher.Encipher.AtbashCipher(CipherText);
 
             Assert.AreEqual("abcdefghijklmnopqrstuvwxyz", PlainText);
         }

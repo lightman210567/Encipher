@@ -4,30 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Encipher
+namespace lightman210567.Encipher
 {
     public class Encipher
     {
-        public static string EncipherText(string PlainText, string CipherToUse)
+        public static string Caesar(string PlainText, int Key)
         {
-            string ResultingText = "";
+            string CipherText = InternalCaesarCipher.CaesarCipherFunction(PlainText, Key);
 
-            switch (CipherToUse)
-            {
-                case "caesar cipher":
-                    Console.WriteLine("Please input your desired key for the caesar cipher. Only enter numbers.");
-                    string KeyInput = Console.ReadLine();
-                    int Key = int.Parse(KeyInput);
-                    ResultingText = CaesarCipher.CaesarCipherFunction(PlainText, Key);
-                    break;
-                case "atbash cipher":
-                    ResultingText = AtbashCipher.Atbash(PlainText);
-                    break;
-                default:
-                    throw new Exception("Cipher input not recognised. Please only enter supported cipher names from the documentation.");
-            }
+            return CipherText;
+        }
 
-            return ResultingText;
+        public static string AtbashCipher(string PlainText)
+        {
+            string CipherText = InternalAtbashCipher.Atbash(PlainText);
+
+            return CipherText;
         }
     }
 }

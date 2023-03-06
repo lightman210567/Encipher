@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Encipher
+namespace lightman210567.Encipher
 {
-    internal class AtbashCipher
+    internal class InternalAtbashCipher
     {
         internal static string Atbash(string PlainText) {
             char[] PlainTextLetters = PlainText.ToCharArray();
