@@ -8,6 +8,14 @@ namespace Encipher
 {
     public class Encipher
     {
-        
+        public static string CaesarCipher()
+        {
+
+        }
+
+        public static string AtbashCipher()
+        {
+
+        }
     }
 }
