@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using lightman210567.LetterToNumber;
 
-namespace Encipher
+namespace lightman210567.Encipher
 {
-    internal class CaesarCipher
+    internal class InternalCaesarCipher
     {
         internal static string CaesarCipherFunction(string PlainText, int Key)
         {

@@ -8,13 +8,18 @@ namespace lightman210567.Encipher
 {
     public class Encipher
     {
-        public static string CaesarCipher()
+        public static string Caesar(string PlainText, int Key)
         {
+            string CipherText = InternalCaesarCipher.CaesarCipherFunction(PlainText, Key);
 
+            return CipherText;
         }
 
-        public static string AtbashCipher()
-        { 
+        public static string AtbashCipher(string PlainText)
+        {
+            string CipherText = InternalAtbashCipher.Atbash(PlainText);
+
+            return CipherText;
         }
     }
 }
