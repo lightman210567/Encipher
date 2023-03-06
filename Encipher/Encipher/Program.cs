@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Encipher
+namespace lightman210567.Encipher
 {
     public class Encipher
     {
@@ -14,8 +14,7 @@ namespace Encipher
         }
 
         public static string AtbashCipher()
-        {
-
+        { 
         }
     }
 }
