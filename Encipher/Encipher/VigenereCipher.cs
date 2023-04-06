@@ -79,14 +79,15 @@ namespace lightman210567.Encipher
 
                 int NumberEquivalent = LetterConverter.LetterConvert(Letter);
 
-                int EncipheredNumber = NumberEquivalent + LetterKey;
+                int RawEncipheredNumber = NumberEquivalent + LetterKey;
+                int EncipheredNumber = ModularArtithmetic.Modulo(RawEncipheredNumber, 26);
 
                 char CipherLetter = LetterConverter.NumberConvert(EncipheredNumber);
 
                 CipherTextArray[ForEachIteration] = CipherLetter;
             }
 
-            string CipherText = CipherTextArray.ToString();
+            string CipherText = new string(CipherTextArray);
 
             return CipherText;
         }
