@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using lightman210567.LetterToNumber;
 
 namespace lightman210567.Encipher
 {
@@ -11,6 +12,7 @@ namespace lightman210567.Encipher
         internal static string VigenereEncrypt(string Key, string PlainText)
         {
             char[] PlainTextArray = PlainText.ToCharArray();
+            char[] CipherTextArray = new char[PlainTextArray.Length];
             char[] KeyArray = Key.ToCharArray();
             char[] ExtendedKeyArray = new char[PlainTextArray.Length];
 
@@ -61,7 +63,32 @@ namespace lightman210567.Encipher
                 }
             }
 
-            return "PLACEHOLDER";
+            int ForEachIteration = 0;
+            foreach (char Letter in PlainTextArray)
+            {
+                int LetterKey;
+
+                if (KeyExtended)
+                {
+                    LetterKey = ExtendedKeyArray[ForEachIteration];
+                }
+                else
+                {
+                    LetterKey = KeyArray[ForEachIteration];
+                }
+
+                int NumberEquivalent = LetterConverter.LetterConvert(Letter);
+
+                int EncipheredNumber = NumberEquivalent + LetterKey;
+
+                char CipherLetter = LetterConverter.NumberConvert(EncipheredNumber);
+
+                CipherTextArray[ForEachIteration] = CipherLetter;
+            }
+
+            string CipherText = CipherTextArray.ToString();
+
+            return CipherText;
         }
     }
 }
