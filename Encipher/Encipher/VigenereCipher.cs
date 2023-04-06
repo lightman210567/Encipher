@@ -7,7 +7,7 @@ using lightman210567.LetterToNumber;
 
 namespace lightman210567.Encipher
 {
-    internal class VigenereCipher
+    internal class InternalVigenereCipher
     {
         internal static string VigenereEncrypt(string Key, string PlainText)
         {

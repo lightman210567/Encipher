@@ -21,5 +21,12 @@ namespace lightman210567.Encipher
 
             return CipherText;
         }
+
+        public static string VigenereEncrypt(string PlainText, string Key)
+        {
+            string CipherText = InternalVigenereCipher.VigenereEncrypt(Key, PlainText);
+
+            return CipherText;
+        }
     }
 }
