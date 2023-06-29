@@ -1,3 +1,6 @@
+This project has been discontinued, because i (@lightman210567) am now learning python instead of C#.
+A python version of this project will be made available at some point.
+
 # Encipher
 
 Encipher is a C# package that contains the implementations of multiple ciphers. Currently (as of v2.0.0), both the caesar cipher and the atbash cipher are supported.
